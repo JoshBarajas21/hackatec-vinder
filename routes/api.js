@@ -15,12 +15,12 @@ const openai = new OpenAIApi(configuration)
 
 
 /* GET api */
-router.get("/", async function (req, res, next) {
+router.post("/", async function (req, res, next) {
   const completion = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
-    messages: [{ role: "user", content: "Give me a list of three North America countries" }],
+    messages: [{ role: "user", content: "Dame 3 lugares de Oaxaca para visitar" }],
   });
-  res.json(completion.data.choices[0]);
+  res.json(completion.data.choices[0].message.content);
 });
   
 module.exports = router;
