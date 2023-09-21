@@ -82,7 +82,7 @@ body {
 .myBtn {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -90,7 +90,7 @@ body {
 button {
   cursor: pointer;
   display: block;
-  padding: 24px 48px;
+  padding: 24px 28px;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 6px;
@@ -159,9 +159,15 @@ a {
 img {
   position: relative;
   width: 200px;
-  top: 420px;
+  top: 400px;
 }
 
-.logo {
-  text-align: center;
+.logoTec {
+  position: relative;
+  padding-left: 23%;
+}
+
+.logoProduct {
+  width: 350px;
+  padding-left: 30%;
 }

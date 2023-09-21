@@ -10,20 +10,21 @@ fetch("/Scripts/respuestas.json")
     const userAnswers = [];
     chatMessages.innerHTML += `<p id="app-web">Vinder: ${preguntas[counter]}</p>`;
 
-//Agregado recientemente
-   const btn = document.getElementById('send-button');
-   const input = document.getElementById('user-message');
+    //Agregado recientemente
+    const btn = document.getElementById("send-button");
+    const input = document.getElementById("user-message");
 
-   input.addEventListener("input", function (){
-    if(input.value.trim() !== "" && input.value.length > 5){
-      btn.removeAttribute("disabled");
-    } else {
-      btn.setAttribute("disabled", "disabled");
-    }
-  });
-// Agregado recientemente
+    input.addEventListener("input", function () {
+      if (input.value.trim() !== "" && input.value.length > 5) {
+        btn.removeAttribute("disabled");
+      } else {
+        btn.setAttribute("disabled", "disabled");
+      }
+    });
+    // Agregado recientemente
 
     btn.addEventListener("click", () => {
+      btn.setAttribute("disabled", "disabled");
       const userMessage = document.getElementById("user-message").value;
       chatMessages.innerHTML += `<p id="user-web">Tu: ${userMessage}</p>`;
       userAnswers.push(userMessage);
@@ -50,13 +51,12 @@ fetch("/Scripts/respuestas.json")
           },
           body: data,
         };
-       
+
         // URL del endpoint
         const url = "http://127.0.0.1:3000/api";
         // Realizar la solicitud POST
         fetch(url, requestOptions)
           .then((response) => {
-
             if (!response.ok) {
               throw new Error("Hubo un problema al realizar la solicitud.");
             }
@@ -73,13 +73,14 @@ fetch("/Scripts/respuestas.json")
       }
     });
     input.addEventListener("keypress", (e) => {
-      if(e.key === 'Enter'){
+      if (e.key === "Enter") {
+        btn.setAttribute("disabled", "disabled");
         const userMessage = document.getElementById("user-message").value;
         chatMessages.innerHTML += `<p id="user-web">Tu: ${userMessage}</p>`;
         userAnswers.push(userMessage);
         document.getElementById("user-message").value = "";
         counter++;
-  
+
         if (counter < preguntas.length) {
           chatMessages.innerHTML += `<p id="app-web">Vinder: ${preguntas[counter]}</p>`;
         } else {
@@ -91,7 +92,7 @@ fetch("/Scripts/respuestas.json")
           data.append("question03", userAnswers[2]);
           data.append("question04", userAnswers[3]);
           data.append("question05", userAnswers[4]);
-  
+
           // Opciones de la solicitud
           const requestOptions = {
             method: "POST",
@@ -100,13 +101,12 @@ fetch("/Scripts/respuestas.json")
             },
             body: data,
           };
-         
+
           // URL del endpoint
           const url = "http://127.0.0.1:3000/api";
           // Realizar la solicitud POST
           fetch(url, requestOptions)
             .then((response) => {
-  
               if (!response.ok) {
                 throw new Error("Hubo un problema al realizar la solicitud.");
               }
@@ -122,5 +122,5 @@ fetch("/Scripts/respuestas.json")
             });
         }
       }
-      })
+    });
   });
