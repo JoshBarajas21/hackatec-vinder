@@ -37,7 +37,7 @@ router.post("/", async function (req, res, next) {
     Respuesta: ${question04}
     5. ¿Que hora es?
     Respuesta: ${question05}
-    Elabora una ruta personalizada de maximo 5 puntos a visitar para un paseo en oaxaca dando como resultado una lista de lugares. 
+    Elabora una ruta personalizada de maximo 6 puntos a visitar para un paseo en oaxaca dando como resultado una lista de lugares. 
     Asegurate de que la lista contemple la hora, 
     de modo que el número de actividades sea alcanzable antes de las 20 horas.
     La respuesta que espero es una lista numerada con un emojie asociado al lugar y el nombre del lugar, solo eso
