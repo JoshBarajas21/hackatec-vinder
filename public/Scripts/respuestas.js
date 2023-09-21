@@ -53,7 +53,7 @@ fetch("/Scripts/respuestas.json")
         };
 
         // URL del endpoint
-        const url = "http://127.0.0.1:3001/api";
+        const url = "http://localhost:3000/api";
         // Realizar la solicitud POST
         fetch(url, requestOptions)
           .then((response) => {
@@ -103,7 +103,7 @@ fetch("/Scripts/respuestas.json")
           };
 
           // URL del endpoint
-          const url = "http://127.0.0.1:3001/api";
+          const url = "http://localhost:3000/api";
           // Realizar la solicitud POST
           fetch(url, requestOptions)
             .then((response) => {
