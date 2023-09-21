@@ -1,0 +1,80 @@
+{
+    "respuestas": [
+      {
+        "pregunta": "Hola",
+        "respuesta": "¡Hola! ¿En qué puedo ayudarte? 🫡"
+      },
+      {
+        "pregunta": "Destino",
+        "respuesta": "¿Tienes en mente algun destino? 🤔 "
+      },
+      {
+        "pregunta": "Plan",
+        "respuesta": "¿Tienes en mente algun destino? 🤔"
+      },
+      {
+        "pregunta": "Ruta",
+        "respuesta": "¿Tienes en mente algun destino? 🤔 "
+      },
+      {
+        "pregunta": "Si",
+        "respuesta": "Mencionalo 👇"
+      },
+      {
+        "pregunta": "No",
+        "respuesta": "¿Te puedo sugerir rutas? 🚞 "
+      },
+      {
+        "pregunta": "Atracciones",
+        "respuesta": "Mi sugerencia de atracciones 🎡 para ti son "
+      },
+      {
+        "pregunta": "Presupuesto",
+        "respuesta": "Ingresa tu presupuesto ideal para la ruta 💸 "
+      },
+      {
+        "pregunta": "Costo",
+        "respuesta": "Ingresa tu presupuesto ideal para la ruta 💸 "
+      },
+      {
+        "pregunta": "1500",
+        "respuesta": "Tengo estas rutas que se adaptan a tu presupuesto 🏷️"
+      },
+      {
+        "pregunta": "6000",
+        "respuesta": "Tengo estas rutas que se adaptan a tu presupuesto 🏷️"
+      },
+
+      {
+        "pregunta": "Oaxaca",
+        "respuesta": "Mi sugerencia para ti en Oaxaca es: Si vas a visitar el estado de Oaxaca en México seguro que pasas por su capital, Oaxaca de Juárez: El Zócalo y la Catedral Nuestra Señora de la Asunción me suenan ideas agradables para ti 😉"
+      },
+      {
+        "pregunta": "oaxaca",
+        "respuesta": "Mi sugerencia para ti en Oaxaca 📍 es 💡 "
+      },
+      {
+        "pregunta": "OAXACA",
+        "respuesta": "Mi sugerencia para ti en Oaxaca 📍 es 💡 "
+      },
+      {
+        "pregunta": "Gracias",
+        "respuesta": "¿Te puedo ayudar en algo más? "
+      },
+      {
+        "pregunta": "Adiós",
+        "respuesta": "¡Hasta luego! 👋 Si tienes más preguntas, no dudes en preguntar."
+      },
+
+      {
+        "pregunta": "adios",
+        "respuesta": "¡Hasta luego! 👋 Si tienes más preguntas, no dudes en preguntar."
+      },
+      {
+        "pregunta": "Hasta luego",
+        "respuesta": "¡Hasta luego! 👋 Si tienes más preguntas, no dudes en preguntar."
+      }
+
+    ]
+  }
+  
