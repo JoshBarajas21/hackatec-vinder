@@ -1,0 +1,167 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+  z-index: -1;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translate(0, -50%);
+}
+
+.content h1 {
+  font-size: 40px;
+  color: #101010;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-top: 0;
+  text-align: left;
+  color: #101010;
+  font-weight: 400;
+}
+
+.overlay-2 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #f2b33d;
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #731414;
+}
+
+.overlay p {
+  font-size: 100px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.data {
+  font-size: 25px;
+}
+
+.screen {
+  color: #323232;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.myBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  padding: 24px 48px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+  color: #101010;
+}
+
+.myBtn:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+  top: 0;
+}
+
+/* BTN 2 */
+a {
+  text-decoration: none;
+  top: 70%;
+  position: fixed;
+  left: 35%;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  background: none;
+  color: #323232;
+}
+
+.customBtn:hover {
+  color: #101010;
+  cursor: pointer;
+}
+
+.enlace-oculto {
+  opacity: 0; /* Inicialmente oculto */
+  animation: aparecer 10s ease-in-out 5s forwards; /* Animación de aparición después de 5 segundos */
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1; /* Hacer que la opacidad sea 1 al final de la animación */
+  }
+}
+
+img {
+  position: relative;
+  width: 200px;
+  top: 420px;
+}
+
+.logo {
+  text-align: center;
+}
