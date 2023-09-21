@@ -75,6 +75,13 @@
         "respuesta": "¡Hasta luego! 👋 Si tienes más preguntas, no dudes en preguntar."
       }
 
+    ],
+    "preguntas":[
+      "¿Cuantos años tienes?",
+      " ¿Quienes viajan contigo y que edad tiene cada uno de tus acompañantes?",
+      "¿Que experiencias te gustaria probar?",
+      "¿Cual es tu presupuesto?",
+      "¿Que hora es?"
     ]
   }
   
