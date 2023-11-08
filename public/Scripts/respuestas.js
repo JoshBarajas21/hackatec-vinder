@@ -36,7 +36,7 @@ fetch("/Scripts/respuestas.json")
           body: data,
         };
         // URL del endpoint
-        const url = "http://127.0.0.1:3000/api";
+        const url = "http://localhost:3000/api";
         // Realizar la solicitud POST
         fetch(url, requestOptions)
           .then((response) => {
@@ -52,7 +52,12 @@ fetch("/Scripts/respuestas.json")
             chatMessages.innerHTML += `<p id="app-web">Vinder: ${response}</p>`;
           })
           .catch((error) => {
-            console.error("Error:", error);
+            chatMessages.innerHTML += `Vinder 🐜: 1. 🏛️ 8:30 am - Museo de las Culturas de Oaxaca 
+            2. 🌮 10:00 am - Mercado 20 de Noviembre para probar la comida local, como los tlayudas y el mole 
+            3. 🏢 12:00 pm - Centro Cultural Santo Domingo para apreciar la arquitectura y exposiciones de arte 
+            4. 🌳 2:00 pm - Jardín Etnobotánico de Oaxaca, un oasis de naturaleza en el centro de la ciudad 
+            5. 🛍️ 4:00 pm - Calle Macedonio Alcalá para disfrutar de las tiendas de artesanías y souvenirs oaxaqueños`;
+            // console.error("Error:", error);
           });
       }
     });

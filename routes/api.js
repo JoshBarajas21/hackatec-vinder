@@ -8,7 +8,8 @@ let dotenv = require("dotenv")
 dotenv.config();
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY
+  apiKey: process.env.OPENAI_API_KEY,
+  max_tokens: 300
 })
 
 const openai = new OpenAIApi(configuration)
@@ -31,7 +32,7 @@ router.post("/", async function (req, res, next) {
     Respuesta: ${question01}
     2. ¿Quienes viajan contigo y que edad tiene cada uno de tus acompañantes?
     Respuesta: ${question02}
-    3. ¿Que experiencias te gustaria probar?
+    3. ¿Que experiencias te gustaria probar de Oaxaca?
     Respuesta: ${question03}
     4. ¿Cual es tu presupuesto?
     Respuesta: ${question04}
@@ -55,7 +56,7 @@ module.exports = router;
 
 
 /*
-Vinder: 1. 🏛️ 8:30 am - Museo de las Culturas de Oaxaca 
+Vinder 🐜: 1. 🏛️ 8:30 am - Museo de las Culturas de Oaxaca 
 2. 🌮 10:00 am - Mercado 20 de Noviembre para probar la comida local, como los tlayudas y el mole 
 3. 🏢 12:00 pm - Centro Cultural Santo Domingo para apreciar la arquitectura y exposiciones de arte 
 4. 🌳 2:00 pm - Jardín Etnobotánico de Oaxaca, un oasis de naturaleza en el centro de la ciudad 
