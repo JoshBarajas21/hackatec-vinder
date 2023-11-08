@@ -57,6 +57,16 @@ body {
     background-color: #128c7e;
 }
 
+#send-button[disabled]{
+    background-color: #aaaaaa;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 /* Estilos para los mensajes del usuario a la derecha */
 #user-web {
     background-color: #dcf8c6;
